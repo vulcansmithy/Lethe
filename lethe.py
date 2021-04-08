@@ -46,15 +46,17 @@ def main():
     
     if choice == "1":
         print(logo)
-        print("You have selected the Information Gathering module")
         print("What kind of scan would you like to conduct?")
         print("1. Whois Scan")
         print("2. Port Scan")
         print("3. Subdomain Scanner")
         print("4. Spider")
-        print("99. Back")
+        print("99. Back \n")
         infochoice = input("Please put in your choice: ")
         if infochoice == "1":
+            clear = lambda: os.system('cls')
+            clear()
+            print(logo) 
             ip = input("What IP do you want to look up: ")
             obj = IPWhois(ip)
             res = obj.lookup_whois()
@@ -175,6 +177,6 @@ def main():
             data = json.loads(url.read().decode())
             print(data)
     else:
-        main()
+        return
 if __name__ == '__main__':
     main()

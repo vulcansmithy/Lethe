@@ -18,7 +18,11 @@ anan = input(": ")
 if anan == "1":
     pass_found = 0                                       
     input_hash = input("Enter the hashed password: ")
-    pass_doc = input("\nPlease enter the path of the password wordlist: :")
+    p = input("\nDo you want to use a custom wordlist? (y or n) :")
+    if p == "y":
+        pass_doc = input("Please enter the path of the wordlist: ")
+    if p == "n":
+        pass_doc = "wordlist.txt"
     try:
         pass_file = open(pass_doc, 'r')              
     except:
