@@ -20,9 +20,9 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
 
 ### 3.Exploiting: 
   * SQL Injection 
-  * DOS 
-  *Slowloris 
-  *SYN flood 
+  * DOS
+#### Slowloris 
+#### SYN flood 
 ### 4.Password: 
 	Hashes 
 		Hash Identifier 
