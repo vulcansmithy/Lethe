@@ -15,29 +15,31 @@ GREEN = Fore.GREEN
 RED   = Fore.RED
 RESET = Fore.RESET
 BLUE  = Fore.BLUE
+PURP  = Fore.MAGENTA
 
 
 def main():
-    logo = (f"""{RED}
+    logo = (f"""{PURP}
                                                  
-                                 
- __           ______       _________   ___   ___      ______      
-/_/\         /_____/\     /________/\ /__/\ /__/\    /_____/\     
-\:\ \        \::::_\/_    \__.::.__\/ \::\ \\  \ \   \::::_\/_    
- \:\ \        \:\/___/\      \::\ \    \::\/_\ .\ \   \:\/___/\   
-  \:\ \____    \::___\/_      \::\ \    \:: ___::\ \   \::___\/_  
-   \:\/___/\    \:\____/\      \::\ \    \: \ \\::\ \   \:\____/\ 
-    \_____\/     \_____\/       \__\/     \__\/ \::\/    \_____\/
+                                                                  
+ __         ______     ______   __  __     ______    
+/\ \       /\  ___\   /\__  _\ /\ \_\ \   /\  ___\   
+\ \ \____  \ \  __\   \/_/\ \/ \ \  __ \  \ \  __\   
+ \ \_____\  \ \_____\    \ \_\  \ \_\ \_\  \ \_____\ 
+  \/_____/   \/_____/     \/_/   \/_/\/_/   \/_____/ 
+                                                      
 
 """)
     print(logo)
-    print("Hello. What would you like to do today?")
-    print("1. Information Gathering")
-    print("2. Vulnerability Analysis")
-    print("3. Explotation")
-    print("4. Passwords")
-    print("5. GeoIP")
-    choice = input("Please put in the number of your choice: ")
+    print("""
+    1. Information Gathering
+    2. Vulnerability Analysis
+    3. Exploiting
+    4. Passwords/Hashes
+    5. GeoIP
+    
+    """)
+    choice = input("Please select a module: ")
     import os
     clear = lambda: os.system('cls')
     clear()
