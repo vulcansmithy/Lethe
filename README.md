@@ -24,14 +24,14 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
       * Slowloris
       * SYN flood 
 ### 4.Password: 
-	Hashes 
-		Hash Identifier 
-		Hash cracker 
-			Online Hash database lookup 
-			Hash dictionary attack 
-	Brute Force 
-		SSH cracker 
-		FTP cracker 
+  * Hashes 
+	* Hash Identifier 
+	* Hash cracker 
+		* Online Hash database lookup 
+		* Hash dictionary attack 
+	* Brute Force 
+		* SSH cracker 
+		* FTP cracker 
 
 ### 5.GeoIP 
 	
