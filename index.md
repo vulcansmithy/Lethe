@@ -8,7 +8,7 @@
 * [Modules](#Modules)
 
 ## General info
-Lethe is a lightweight pentest framework. It uncludes modules for Information Gathering, Vulnerability analysis, Explotation and more.
+Lethe is a lightweight pentest framework. It includes modules for Information Gathering, Vulnerability analysis, Explotation and more.
 
 ## Setup
 
