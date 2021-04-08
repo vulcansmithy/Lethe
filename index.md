@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# Lethe
 
-You can use the [editor on GitHub](https://github.com/hades921/Lethe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[logo]: https://i.ibb.co/pxt0SCx/requirements-txt-lethe-Visual-Studio-Code-08-04-2021-18-07-23-2.png "Logo Lethe"
+![logo]
+## Table of contents
+* [General info](#general-info)
+* [Setup](#setup)
+* [Modules](#Modules)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## General info
+Lethe is a lightweight pentest framework. It uncludes modules for Information Gathering, Vulnerability analysis, Explotation and more.
 
-### Markdown
+## Setup
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Lethe runs on any platform that has python3 and setting it up is very easy.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+$ git clone https://github.com/hades921/Lethe.git
+$ cd Lethe
+$ pip3 install -r requirements.txt
+$ python lethe.py
+```
+	
+## Modules
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 1.Information Gathering: 
+  *  WhoIS scan 
+  *  Port scanner 
+  *  Subdomain Scanner 
+  *  Spider/Crawler
+### 2.Vulnerability Analysis: 
+  * SQLI scan 
+  * SSL scan 
 
-### Jekyll Themes
+### 3.Exploiting: 
+  * SQL Injection
+  * DOS
+      * Slowloris
+      * SYN flood 
+### 4.Password: 
+  * Hashes 
+	* Hash Identifier 
+	* Hash cracker (supported hashes: md5, sha1, sha256, sha3 256)
+		* Online Hash database lookup 
+		* Hash dictionary attack 
+  * Brute Force 
+	* SSH cracker 
+	* FTP cracker 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hades921/Lethe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 5.GeoIP 
+	
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
