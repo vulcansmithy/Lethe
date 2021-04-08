@@ -14,15 +14,15 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
   *  Port scanner 
   *  Subdomain Scanner 
   *  Spider/Crawler
-  *  2.Vulnerability Analysis: 
-	SQLI scan 
-	SSL scan 
+### 2.Vulnerability Analysis: 
+  * SQLI scan 
+  * SSL scan 
 
 ### 3.Exploiting: 
-	SQL Injection 
-	DOS 
-		Slowloris 
-		SYN flood 
+  * SQL Injection 
+  * DOS 
+  *Slowloris 
+  *SYN flood 
 ### 4.Password: 
 	Hashes 
 		Hash Identifier 
