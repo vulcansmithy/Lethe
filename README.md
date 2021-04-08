@@ -39,10 +39,14 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
 ### 5.GeoIP 
 	
 ## Setup
-To run this project, install it locally using npm:
+
+Lethe runs on any platform that has python3.
+Setting it up is very easy.
 
 ```
-
-
+$ git clone https://github.com/hades921/Lethe.git
+$ cd Lethe
+$ pip3 install -r requirements.txt
+$ python lethe.py
 ```
 
