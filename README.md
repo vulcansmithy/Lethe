@@ -26,7 +26,7 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
 ### 4.Password: 
   * Hashes 
 	* Hash Identifier 
-	* Hash cracker 
+	* Hash cracker (supported hashes: md5, sha1, sha256, sha3 256)
 		* Online Hash database lookup 
 		* Hash dictionary attack 
 	* Brute Force 
