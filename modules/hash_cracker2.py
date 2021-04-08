@@ -18,7 +18,7 @@ anan = input(": ")
 if anan == "1":
     pass_found = 0                                       
     input_hash = input("Enter the hashed password: ")
-    p = input("\nDo you want to use a custom wordlist? (y or n) :")
+    p = input("\nDo you want to use a custom wordlist? (y or n) : \n")
     if p == "y":
         pass_doc = input("Please enter the path of the wordlist: ")
     if p == "n":
@@ -27,7 +27,7 @@ if anan == "1":
         pass_file = open(pass_doc, 'r')              
     except:
         print("Error:")
-        print(pass_doc, "is not found.\nPlease give the path of file correctly.\n") 
+        print(pass_doc, "is not found.\nPlease give the path of file correctly.") 
         quit()
     for word in pass_file:
         enc_word = word.encode('utf-8')
@@ -44,7 +44,11 @@ if anan == "1":
 if anan == "2":
     pass_found = 0                                       
     input_hash = input("Enter the hashed password: ")
-    pass_doc = input("\nPlease enter the path of the password wordlist: :")
+    p = input("\nDo you want to use a custom wordlist? (y or n) : \n")
+    if p == "y":
+        pass_doc = input("Please enter the path of the wordlist: ")
+    if p == "n":
+        pass_doc = "wordlist.txt"
     try:
         pass_file = open(pass_doc, 'r')              
     except:
@@ -66,7 +70,11 @@ if anan == "2":
 if anan == "3":
     pass_found = 0                                       
     input_hash = input("Enter the hashed password: ")
-    pass_doc = input("\nPlease enter the path of the password wordlist: :")
+    p = input("\nDo you want to use a custom wordlist? (y or n) : \n")
+    if p == "y":
+        pass_doc = input("Please enter the path of the wordlist: ")
+    if p == "n":
+        pass_doc = "wordlist.txt"
     try:
         pass_file = open(pass_doc, 'r')              
     except:
@@ -88,7 +96,11 @@ if anan == "3":
 if anan == "4":
     pass_found = 0                                       
     input_hash = input("Enter the hashed password: ")
-    pass_doc = input("\nPlease enter the path of the password wordlist: :")
+    p = input("\nDo you want to use a custom wordlist? (y or n) : \n")
+    if p == "y":
+        pass_doc = input("Please enter the path of the wordlist: ")
+    if p == "n":
+        pass_doc = "wordlist.txt"
     try:
         pass_file = open(pass_doc, 'r')              
     except:
@@ -109,7 +121,11 @@ if anan == "4":
     print("***************************************")
 if anan == "5":
     pass_found = 0                                       
-    input_hash = input("Enter the hashed password: ")
+    p = input("\nDo you want to use a custom wordlist? (y or n) : \n")
+    if p == "y":
+        pass_doc = input("Please enter the path of the wordlist: ")
+    if p == "n":
+        pass_doc = "wordlist.txt"
     pass_doc = input("\nPlease enter the path of the password wordlist: :")
     try:
         pass_file = open(pass_doc, 'r')              
