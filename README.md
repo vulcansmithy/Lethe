@@ -1,4 +1,7 @@
 # Lethe
+
+[logo]: https://i.ibb.co/pxt0SCx/requirements-txt-lethe-Visual-Studio-Code-08-04-2021-18-07-23-2.png "Logo Lethe"
+
 ## Table of contents
 * [General info](#general-info)
 * [Modules](#Modules)
