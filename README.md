@@ -19,7 +19,7 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
   * SSL scan 
 
 ### 3.Exploiting: 
-	-SQL Injcetion
+-SQL Injcetion
 ### 4.Password: 
 	Hashes 
 		Hash Identifier 
