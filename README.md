@@ -9,11 +9,11 @@ Lethe is a lightweight pentest framework. It uncludes modules for Information Ga
 	
 ## Modules
 
-## 1.Information Gathering: 
-#### WhoIS scan 
-#### Port scanner 
-#### Subdomain Scanner 
-#### Spider/Crawler 
+### 1.Information Gathering: 
+#### *WhoIS scan 
+#### *Port scanner 
+#### *Subdomain Scanner 
+#### *Spider/Crawler 
 ### 2.Vulnerability Analysis: 
 	SQLI scan 
 	SSL scan 
