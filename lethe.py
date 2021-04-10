@@ -7,6 +7,7 @@ import json
 import requests
 from simple_geoip import GeoIP
 from ipwhois import IPWhois
+import nmap3
 
 from colorama import init, Fore
 init()
@@ -51,6 +52,7 @@ def main():
         print("2. Port Scan")
         print("3. Subdomain Scanner")
         print("4. Spider")
+        print("5. OS fingerprinting")
         print("99. Back \n")
         infochoice = input("Please put in your choice: ")
         if infochoice == "1":
@@ -69,7 +71,14 @@ def main():
         if infochoice == "3":
             clear = lambda: os.system('cls')
             clear()
-            os.system("python modules/subdomain_scanner.py")           
+            os.system("python modules/subdomain_scanner.py")
+        if infochoice == "4":
+            os.system("python modules/spider.py") 
+        if infochoice == "5":
+            import nmap3
+            nmap = nmap3.Nmap()
+            os_results = nmap.nmap_version_detection(input("Please enter the IP you want to scan: "))
+            print(os_results)
 
     if choice == "2":
         print(logo)
