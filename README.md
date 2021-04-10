@@ -28,6 +28,7 @@ $ python lethe.py
   *  Port scanner 
   *  Subdomain Scanner 
   *  Spider/Crawler
+  *  OS fingerprinting
 ### 2.Vulnerability Analysis: 
   * SQLI scan 
   * SSL scan 
