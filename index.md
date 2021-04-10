@@ -1,6 +1,6 @@
 # Lethe
 
-[logo]: https://i.ibb.co/pxt0SCx/requirements-txt-lethe-Visual-Studio-Code-08-04-2021-18-07-23-2.png "Logo Lethe"
+[logo]: https://i.imgur.com/BFzx8y4.png "Logo Lethe"
 ![logo]
 ## Table of contents
 * [General info](#general-info)
@@ -28,6 +28,7 @@ $ python lethe.py
   *  Port scanner 
   *  Subdomain Scanner 
   *  Spider/Crawler
+  *  OS fingerprinting
 ### 2.Vulnerability Analysis: 
   * SQLI scan 
   * SSL scan 
@@ -37,7 +38,6 @@ $ python lethe.py
   * DOS
       * Slowloris
       * SYN flood 
-
 ### 4.Password: 
   * Hashes 
 	* Hash Identifier 
@@ -49,5 +49,11 @@ $ python lethe.py
 	* FTP cracker 
 
 ### 5.GeoIP 
+
+### 6. Network
+  * ARP scan
+	
+
+
 	
 
