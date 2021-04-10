@@ -1,6 +1,6 @@
 # Lethe
 
-[logo]: https://i.ibb.co/pxt0SCx/requirements-txt-lethe-Visual-Studio-Code-08-04-2021-18-07-23-2.png "Logo Lethe"
+[logo]: https://i.imgur.com/BFzx8y4.png "Logo Lethe"
 ![logo]
 ## Table of contents
 * [General info](#general-info)
