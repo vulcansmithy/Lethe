@@ -38,6 +38,7 @@ def main():
     3. Exploiting
     4. Passwords/Hashes
     5. GeoIP
+    6. Network
     
     """)
     choice = input("Please select a module: ")
@@ -53,6 +54,7 @@ def main():
         print("3. Subdomain Scanner")
         print("4. Spider")
         print("5. OS fingerprinting")
+        print("6. Subnet scan")
         print("99. Back \n")
         infochoice = input("Please put in your choice: ")
         if infochoice == "1":
@@ -79,6 +81,10 @@ def main():
             nmap = nmap3.Nmap()
             os_results = nmap.nmap_version_detection(input("Please enter the IP you want to scan: "))
             print(os_results)
+        if infochoice == "6":
+            import nmap3
+            nmap = nmap3.Nmap()
+            results = nmap.nmap_subnet_scan("Please enter the IP you want to scan: ")     
 
     if choice == "2":
         print(logo)
@@ -185,6 +191,26 @@ def main():
         with urllib.request.urlopen("https://geolocation-db.com/json/" + adress) as url:
             data = json.loads(url.read().decode())
             print(data)
+    if choice == "6":
+        clear = lambda: os.system('cls')
+        clear()
+        print(logo)
+        print("""Network Module
+        
+        1. ARP scan
+        2. Local network host discovery 
+
+        """)       
+        nscan = input("Please select a module: ")
+        if nscan == "1":
+            import nmap3
+            ip = input("Please put in the local ip of the target: ")
+            nmap = nmap3.NmapHostDiscovery()
+            results = nmap.nmap_arp_discovery(ip)
+            import json
+            json_data = results
+            print(json.dumps(json_data, indent = 1))
+
     else:
         return
 if __name__ == '__main__':

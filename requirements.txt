@@ -12,3 +12,4 @@ simple_geoip
 requests_html
 scapy
 pygeoip
+nmap3
