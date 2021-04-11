@@ -11,5 +11,6 @@ google
 simple_geoip
 requests_html
 scapy
+beautifulsoup4
 pygeoip
 nmap3

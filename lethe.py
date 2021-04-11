@@ -89,22 +89,30 @@ def main():
 
     if choice == "2":
         print(logo)
-        print("You have selected the Vulnerability Analysis module")
-        print("1. SQLI vulnerability scan")
-        print("2. SSL vulnerability scan")
-        print("99. Back")
+        print("""
+You have selected the Vulnerability Analysis module
+    1. SQLI vulnerability scan
+    2. SSL vulnerability scan
+    3. XSS vulnerability scan
+    99. Back
+""")
+
         choice2 = input ("Please select a module: ")
         if choice2 == "1":
             clear = lambda: os.system('cls')
             clear()
             os.system("python modules/sqli.py")
         if choice2 =="2":
+            clear = lambda: os.system('cls')
+            clear()
             import os
             server = input("please put in the domain: ")
-            command = 'pysslscan scan --scan=server.ciphers --scan=vuln.heartbleed --report=term:rating=ssllabs.2009e ' + server
-        os.system(command)
-        clear = lambda: os.system('cls')
-        clear()
+            command = 'pysslscan scan --tls10 --scan=server.ciphers --scan=vuln.heartbleed --scan=server.compression --report=term:rating=ssllabs.2009e ' + server
+            os.system(command)
+        if choice2 == "3":
+            os.system("python modules/xss.py")
+
+
     if choice == "3":
         print(logo)
         print("1. SQL injection")
