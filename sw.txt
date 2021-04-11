@@ -4,6 +4,8 @@ ftp
 localhost
 webmail
 smtp
+www22
+wwww3
 pop
 ns1
 webdisk
