@@ -56,27 +56,5 @@ $ python lethe.py
 	
 
 
-### 3.Exploiting: 
-  * SQL Injection
-  * DOS
-      * Slowloris
-      * SYN flood 
-### 4.Password: 
-  * Hashes 
-	* Hash Identifier 
-	* Hash cracker (supported hashes: md5, sha1, sha256, sha3 256)
-		* Online Hash database lookup 
-		* Hash dictionary attack 
-  * Brute Force 
-	* SSH cracker 
-	* FTP cracker 
-
-### 5.GeoIP 
-
-### 6. Network
-  * ARP scan
-	
-
-
 	
 
