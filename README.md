@@ -31,7 +31,8 @@ $ python lethe.py
   *  OS fingerprinting
 ### 2.Vulnerability Analysis: 
   * SQLI scan 
-  * SSL scan 
+  * SSL scan
+  * XSS scan
 
 ### 3.Exploiting: 
   * SQL Injection
