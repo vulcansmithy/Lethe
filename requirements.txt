@@ -13,4 +13,4 @@ requests_html
 scapy
 beautifulsoup4
 pygeoip
-nmap3
+python3-nmap
