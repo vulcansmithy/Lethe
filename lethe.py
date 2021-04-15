@@ -70,13 +70,13 @@ def main():
         if infochoice == "2":
             clear = lambda: os.system('cls')
             clear()
-            os.system("python modules/port_scanner.py")
+            os.system("python3 modules/port_scanner.py")
         if infochoice == "3":
             clear = lambda: os.system('cls')
             clear()
-            os.system("python modules/subdomain_scanner.py")
+            os.system("python3 modules/subdomain_scanner.py")
         if infochoice == "4":
-            os.system("python modules/spider.py") 
+            os.system("python3 modules/spider.py") 
         if infochoice == "5":
             import nmap3
             nmap = nmap3.Nmap()
@@ -101,7 +101,7 @@ You have selected the Vulnerability Analysis module
         if choice2 == "1":
             clear = lambda: os.system('cls')
             clear()
-            os.system("python modules/sqli.py")
+            os.system("python3 modules/sqli.py")
         if choice2 =="2":
             clear = lambda: os.system('cls')
             clear()
@@ -110,7 +110,7 @@ You have selected the Vulnerability Analysis module
             command = 'pysslscan scan --tls10 --scan=server.ciphers --scan=vuln.heartbleed --scan=server.compression --report=term:rating=ssllabs.2009e ' + server
             os.system(command)
         if choice2 == "3":
-            os.system("python modules/xss.py")
+            os.system("python3 modules/xss.py")
 
 
     if choice == "3":
