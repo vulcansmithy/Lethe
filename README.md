@@ -39,6 +39,7 @@ $ python3 lethe.py
   * DOS
       * Slowloris
       * SYN flood 
+  * Buffer Overflow
 ### 4.Password: 
   * Hashes 
 	* Hash Identifier 

