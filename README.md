@@ -18,7 +18,7 @@ Lethe runs on any platform that has python3 and setting it up is very easy.
 $ git clone https://github.com/hades921/Lethe.git
 $ cd Lethe
 $ pip3 install -r requirements.txt
-$ python lethe.py
+$ python3 lethe.py
 ```
 	
 ## Modules
